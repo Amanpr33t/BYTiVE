@@ -4,7 +4,7 @@ app.use(express.static('./public'))
 app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 const connectDB= require('./db/connect')
-const port= process.env.PORT || 7000
+const port=  7000
 const mongoose= require('mongoose')
 mongoose.set('strictQuery', true)
 require('dotenv').config()
